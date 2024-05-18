@@ -2,7 +2,7 @@
 import React from "react";
 import { useCart } from "@/app/context/page";
 import { UserAuth } from "@/app/context/AuthContext"; 
-import { doc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
+import { doc, updateDoc, arrayUnion} from "firebase/firestore";
 import { db } from "@/app/services/firebase"; 
 
 export default function Card({ img, name, course, description, review, price }) {

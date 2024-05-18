@@ -1,18 +1,9 @@
 'use client'
-import React,{useEffect} from 'react';
+import React from 'react';
 import { useCart } from '@/app/context/page';
-import { UserAuth } from '@/app/context/AuthContext';
-
-
-
 
 const ShoppingCart = () => {
   const { cartItems, removeFromCart, calculateTotalPrice} = useCart();
-
-  
-  const { user } = UserAuth();
-
- 
 
   return (
     <div>

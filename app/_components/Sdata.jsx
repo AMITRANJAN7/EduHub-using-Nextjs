@@ -1,4 +1,5 @@
-const Sdata =[
+'use client'
+  const Sdata =[
     {
      id:1,   
      img:"./jonathon.jpg",

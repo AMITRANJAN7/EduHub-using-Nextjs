@@ -1,4 +1,4 @@
-import AudioCard from "../_components/AudioCard";
+
 
 
 export default  function podcast(){

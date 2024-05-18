@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoIosClose } from "react-icons/io" // Import close icon SVG
+import { IoIosClose } from "react-icons/io" ;
 import ShoppingCart from './Shoppingcart';
 
 const Sidebar = ({ isOpen, closeSidebar }) => {

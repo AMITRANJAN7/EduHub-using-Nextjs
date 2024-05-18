@@ -13,36 +13,14 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-
-let app;
-let auth;
-let db;
-
-// Asynchronously initialize Firebase app
-async function initializeFirebase() {
-  try {
-    app = await initializeApp(firebaseConfig);
-    auth = getAuth(app);
-    db = getFirestore(app);
-    console.log("Firebase initialized successfully!");
-  } catch (error) {
-    console.error("Error initializing Firebase:", error);
-  }
-}
-
-// Call the initialization function
-initializeFirebase();
-
-// Export initialized Firebase services
-export { app, auth, db };
-
-
-{/*// Initialize Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-*/}
+
 
 
 
