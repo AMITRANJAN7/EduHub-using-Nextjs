@@ -2,8 +2,8 @@
 import "./globals.css";
 import Header from "./_components/Header"
 import Footer from "./_components/Footer";
-import { CartProvider } from "./context/page";
-import { AuthContextProvider } from "@/app/context/AuthContext";
+import { CartContextProvider } from "@/app/_context/CartContext";
+import { AuthContextProvider } from "@/app/_context/AuthContext";
 import Home from "@/app/_components/Home";
 
 export const metadata = {
@@ -16,12 +16,12 @@ export default function RootLayout({ children}) {
     <html lang="en">
       <body> 
       <AuthContextProvider>
-        <CartProvider>       
+        <CartContextProvider>       
         <Header />        
         <Home />
         {children}
         <Footer/> 
-        </CartProvider> 
+        </CartContextProvider> 
         </AuthContextProvider>      
         </body>
     </html>

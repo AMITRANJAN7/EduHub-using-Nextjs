@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect} from 'react';
 import { useRouter } from 'next/navigation';
-import { UserAuth } from '@/app/context/AuthContext';
+import { UserAuth } from '@/app/_context/AuthContext';
 
 const Home = () => {
   const { user, logOut } = UserAuth();

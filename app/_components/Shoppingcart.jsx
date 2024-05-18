@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { useCart } from '@/app/context/page';
+import { useCart } from '@/app/_context/CartContext';
 
 const ShoppingCart = () => {
   const { cartItems, removeFromCart, calculateTotalPrice} = useCart();

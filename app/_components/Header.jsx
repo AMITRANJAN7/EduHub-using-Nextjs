@@ -16,7 +16,7 @@ import Image from 'next/image'
 import { Search, ShoppingCart, User } from 'lucide-react'
 import Link from 'next/link'
 import Sidebar from './Sidebar';
-import { useCart } from '@/app/context/page';
+import { useCart } from '@/app/_context/CartContext';
 
 
 

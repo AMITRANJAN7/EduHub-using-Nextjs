@@ -4,7 +4,7 @@
 import Link from 'next/link';
 import React,{useState} from 'react'
 import { useRouter } from 'next/navigation';
-import { UserAuth } from '@/app/context/AuthContext';
+import { UserAuth } from '@/app/_context/AuthContext';
 
 const signup = () => {
   const [remLogIn,setRemLogIn] = useState(true);

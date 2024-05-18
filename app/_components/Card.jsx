@@ -1,7 +1,7 @@
-
+"use client"
 import React from "react";
-import { useCart } from "@/app/context/page";
-import { UserAuth } from "@/app/context/AuthContext"; 
+import { useCart } from "@/app/_context/CartContext";
+import { UserAuth } from "@/app/_context/AuthContext"; 
 import { doc, updateDoc, arrayUnion} from "firebase/firestore";
 import { db } from "@/app/services/firebase"; 
 
